@@ -1,0 +1,333 @@
+# vsim work.top -assertdebug -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 06:49:58 on Feb 21,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.muxinter(fast)
+# Loading work.muxdut(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.muxinter(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll
+add wave -position insertpoint  \
+sim:/top/inter/i0 \
+sim:/top/inter/i1 \
+sim:/top/inter/out \
+sim:/top/inter/sel
+run
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO test.sv(16) @ 0: uvm_test_top [uvm_test_top] **MESSSAGE FROM TEST**
+# UVM_INFO environment.sv(20) @ 0: uvm_test_top.env [env] **MESSAGE IS FROM ENVIRONMENT BUILD PHASE WITH NONE**
+# UVM_INFO driver.sv(17) @ 0: uvm_test_top.env.agt_a.drv [DRIVER] **MESSAGE IS FROM DRIVER BUILD PHASE WITH LOW**
+# UVM_INFO scoreboard.sv(25) @ 0: uvm_test_top.env.scb [scb] **MESSAGE IS FROM SCOREBOARD BUILD PHASE WITH NONE**
+# UVM_INFO environment.sv(26) @ 0: uvm_test_top.env [uvm_test_top.env] **CONNECTING ENVIRONMENT PHASE**
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               test                    -     @471 
+#   env                      environment             -     @478 
+#     agt_a                  a_agent                 -     @489 
+#       drv                  driver                  -     @636 
+#         rsp_port           uvm_analysis_port       -     @651 
+#         seq_item_port      uvm_seq_item_pull_port  -     @643 
+#       i_mon                i_monitor               -     @659 
+#         m_put_port         uvm_blocking_put_port   -     @666 
+#       sqr                  sequencer               -     @527 
+#         rsp_export         uvm_analysis_export     -     @534 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @628 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     agt_p                  p_agent                 -     @496 
+#       o_mon                o_monitor               -     @686 
+#         m_put_port1        uvm_blocking_put_port   -     @693 
+#     scb                    scoreboard              -     @503 
+#       covg                 coverage                -     @714 
+#       my_export            uvm_blocking_put_imp_i  -     @510 
+#       my_export1           uvm_blocking_put_imp_o  -     @518 
+# --------------------------------------------------------------
+# 
+# UVM_INFO environment.sv(32) @ 0: uvm_test_top.env [uvm_test_top.env] END OF ELABORATION
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @728                         
+#   begin_time                   time      64    0                            
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 1: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=106,i1=244,sel=1
+# UVM_INFO i_monitor.sv(39) @ 1: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=244
+# UVM_INFO o_monitor.sv(30) @ 1: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=244
+# UVM_INFO o_monitor.sv(31) @ 1: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=244
+# UVM_INFO scoreboard.sv(38) @ 1: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=244,exp_pkt.out=244
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @757                         
+#   begin_time                   time      64    1                            
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 2: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=164,i1=13,sel=0
+# UVM_INFO i_monitor.sv(39) @ 2: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=164
+# UVM_INFO o_monitor.sv(30) @ 2: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=164
+# UVM_INFO o_monitor.sv(31) @ 2: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=164
+# UVM_INFO scoreboard.sv(38) @ 2: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=164,exp_pkt.out=164
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @761                         
+#   begin_time                   time      64    2                            
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 3: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=128,i1=71,sel=1
+# UVM_INFO i_monitor.sv(39) @ 3: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=71
+# UVM_INFO o_monitor.sv(30) @ 3: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=71
+# UVM_INFO o_monitor.sv(31) @ 3: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=71
+# UVM_INFO scoreboard.sv(38) @ 3: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=71,exp_pkt.out=71
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @765                         
+#   begin_time                   time      64    3                            
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 4: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=41,i1=4,sel=1
+# UVM_INFO i_monitor.sv(39) @ 4: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=4
+# UVM_INFO o_monitor.sv(30) @ 4: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=4
+# UVM_INFO o_monitor.sv(31) @ 4: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=4
+# UVM_INFO scoreboard.sv(38) @ 4: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=4,exp_pkt.out=4
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @769                         
+#   begin_time                   time      64    4                            
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 5: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=192,i1=222,sel=0
+# UVM_INFO i_monitor.sv(39) @ 5: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=192
+# UVM_INFO o_monitor.sv(30) @ 5: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=192
+# UVM_INFO o_monitor.sv(31) @ 5: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=192
+# UVM_INFO scoreboard.sv(38) @ 5: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=192,exp_pkt.out=192
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @773                         
+#   begin_time                   time      64    5                            
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 6: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=103,i1=55,sel=0
+# UVM_INFO i_monitor.sv(39) @ 6: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=103
+# UVM_INFO o_monitor.sv(30) @ 6: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=103
+# UVM_INFO o_monitor.sv(31) @ 6: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=103
+# UVM_INFO scoreboard.sv(38) @ 6: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=103,exp_pkt.out=103
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @777                         
+#   begin_time                   time      64    6                            
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 7: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=49,i1=51,sel=0
+# UVM_INFO i_monitor.sv(39) @ 7: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=49
+# UVM_INFO o_monitor.sv(30) @ 7: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=49
+# UVM_INFO o_monitor.sv(31) @ 7: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=49
+# UVM_INFO scoreboard.sv(38) @ 7: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=49,exp_pkt.out=49
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @781                         
+#   begin_time                   time      64    7                            
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 8: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=155,i1=197,sel=0
+# UVM_INFO i_monitor.sv(39) @ 8: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=155
+# UVM_INFO o_monitor.sv(30) @ 8: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=155
+# UVM_INFO o_monitor.sv(31) @ 8: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=155
+# UVM_INFO scoreboard.sv(38) @ 8: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=155,exp_pkt.out=155
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @785                         
+#   begin_time                   time      64    8                            
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 9: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=235,i1=160,sel=0
+# UVM_INFO i_monitor.sv(39) @ 9: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=235
+# UVM_INFO o_monitor.sv(30) @ 9: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=235
+# UVM_INFO o_monitor.sv(31) @ 9: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=235
+# UVM_INFO scoreboard.sv(38) @ 9: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=235,exp_pkt.out=235
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @789                         
+#   begin_time                   time      64    9                            
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 10: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=102,i1=233,sel=0
+# UVM_INFO i_monitor.sv(39) @ 10: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=102
+# UVM_INFO o_monitor.sv(30) @ 10: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=102
+# UVM_INFO o_monitor.sv(31) @ 10: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=102
+# UVM_INFO scoreboard.sv(38) @ 10: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=102,exp_pkt.out=102
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @793                         
+#   begin_time                   time      64    10                           
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 11: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=85,i1=38,sel=1
+# UVM_INFO i_monitor.sv(39) @ 11: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=38
+# UVM_INFO o_monitor.sv(30) @ 11: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=38
+# UVM_INFO o_monitor.sv(31) @ 11: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=38
+# UVM_INFO scoreboard.sv(38) @ 11: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=38,exp_pkt.out=38
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @797                         
+#   begin_time                   time      64    11                           
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 12: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=160,i1=177,sel=0
+# UVM_INFO i_monitor.sv(39) @ 12: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=160
+# UVM_INFO o_monitor.sv(30) @ 12: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=160
+# UVM_INFO o_monitor.sv(31) @ 12: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=160
+# UVM_INFO scoreboard.sv(38) @ 12: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=160,exp_pkt.out=160
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @801                         
+#   begin_time                   time      64    12                           
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 13: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=234,i1=173,sel=0
+# UVM_INFO i_monitor.sv(39) @ 13: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=234
+# UVM_INFO o_monitor.sv(30) @ 13: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=234
+# UVM_INFO o_monitor.sv(31) @ 13: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=234
+# UVM_INFO scoreboard.sv(38) @ 13: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=234,exp_pkt.out=234
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @805                         
+#   begin_time                   time      64    13                           
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 14: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=97,i1=241,sel=1
+# UVM_INFO i_monitor.sv(39) @ 14: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=241
+# UVM_INFO o_monitor.sv(30) @ 14: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=241
+# UVM_INFO o_monitor.sv(31) @ 14: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=241
+# UVM_INFO scoreboard.sv(38) @ 14: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=241,exp_pkt.out=241
+# ----------------------------------------------------------------------------
+# Name                           Type      Size  Value                        
+# ----------------------------------------------------------------------------
+# pkt                            seq_item  -     @809                         
+#   begin_time                   time      64    14                           
+#   depth                        int       32    'd2                          
+#   parent sequence (name)       string    2     sq                           
+#   parent sequence (full name)  string    29    uvm_test_top.env.agt_a.sqr.sq
+#   sequencer                    string    26    uvm_test_top.env.agt_a.sqr   
+# ----------------------------------------------------------------------------
+# UVM_INFO i_monitor.sv(38) @ 15: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] i0=42,i1=220,sel=1
+# UVM_INFO i_monitor.sv(39) @ 15: uvm_test_top.env.agt_a.i_mon [uvm_test_top.env.agt_a.i_mon] out=220
+# UVM_INFO o_monitor.sv(30) @ 15: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=220
+# UVM_INFO o_monitor.sv(31) @ 15: uvm_test_top.env.agt_p.o_mon [uvm_test_top.env.agt_p.o_mon] out=220
+# UVM_INFO scoreboard.sv(38) @ 15: uvm_test_top.env.scb [uvm_test_top.env.scb] recv_pkt.out=220,exp_pkt.out=220
+# UVM_INFO test.sv(25) @ 35: uvm_test_top [uvm_test_top] message from test runphase
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 35: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   87
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRIVER]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [env]     1
+# [scb]     1
+# [uvm_test_top]     2
+# [uvm_test_top.env]     2
+# [uvm_test_top.env.agt_a.i_mon]    30
+# [uvm_test_top.env.agt_p.o_mon]    30
+# [uvm_test_top.env.scb]    15
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 35 ns  Iteration: 54  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+coverage report -html -htmldir covhtmlreport -assert -directive -cvg -code bcefst -threshL 50 -threshH 90
+# Report created in covhtmlreport/index.html
+q -sim
+# End time: 03:55:11 on Feb 22,2025, Elapsed time: 21:05:13
+# Errors: 0, Warnings: 0
+ cd {G:\SV\Code_Practice\m_practice\m_linux_commands}
